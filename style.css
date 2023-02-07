@@ -45,7 +45,6 @@ body {
     padding: 0 3.5em;
     color: #1c2639;
     background: #fff;
-    position: relative;
     box-sizing: border-box;
     overflow-y: hidden;
     -ms-overflow-style: none; 
@@ -186,6 +185,10 @@ input {
     font-size: .8rem;
 }
 
+.forgot-password a:hover {
+    text-decoration: none;
+}
+
 .submit {
     border: 1px solid transparent;
     border-radius: 6px;
@@ -287,8 +290,15 @@ input {
 /* mobile */
 
 @media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 0;
+        display: block;
+        margin: 0;
+    }
+
     .signup_signin-container {
-        height: 87%;
+        height: 100%;
+        max-width: 100%;
     }
 
     .left {
@@ -296,14 +306,72 @@ input {
     }
 
     .right {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        padding: 0 4em;
     }
 
     .mobile-logo {
         display: block;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .wrapper {
+        padding: 0;
+        display: block;
+        margin: 0;
+    }
+
+    .signup_signin-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0;
+        padding: 2em;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .wrapper {
+        padding: 0;
+        display: block;
+        margin: 0;
+    }
+
+    .signup_signin-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+}
+
+
 
 
 
