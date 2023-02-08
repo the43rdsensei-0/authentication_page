@@ -44,11 +44,11 @@
                         <p>Let's get started with your 30 days trial</p>
                     </header>
     
-                    <div class="form">
-                        <form action="">
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                    <div class="">
+                        <form id="signup-form" action="">
+                            <input class="signup-input" type="text" placeholder="Name" required autocomplete="off">
+                            <input class="signup-input" type="email" placeholder="Email" required autocomplete="off">
+                            <input class="signup-input" type="password" placeholder="Password" required autocomplete="off">
                             <input class="submit" type="submit" value="Create account">
                             <button class="btn">
                                 <div class="btn-flex">
@@ -80,13 +80,13 @@
     
                     <p class="or">or</p>
         
-                    <form action="">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
+                    <form id="signin-form" action="">
+                        <input class="signin-input" type="email" placeholder="Email" required>
+                        <input class="signin-input" type="password" placeholder="Password" required>
                         <div class="forgot-password">
                             <a href="#">Forgot password</a>
                         </div>
-                        <input class="submit" type="submit" value="Log in">
+                        <input class="submit submit-btn" type="submit" value="Log in">
                     </form>
         
                     <div class="login">

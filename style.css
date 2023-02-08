@@ -109,7 +109,6 @@ body {
     transition: .4s ease;
 }
 
-.arrow:focus,
 .arrow:hover {
     border: 1px solid rgba(255, 255, 255, 1);
 }
@@ -200,7 +199,6 @@ input {
     transition: .4s ease;
 }
 
-.submit:hover,
 .submit:focus {
     /* border: 1px solid #1c2639;
     background: transparent;
@@ -218,8 +216,7 @@ input {
     transition: .4s ease;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
     border: 1px solid #1c2639;
 }
 

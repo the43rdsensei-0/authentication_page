@@ -1,8 +1,3 @@
-
-
-
-
-
 // setting up an array with objects as indexes so i can run a forEach on and pull the value to insert on the html
 
 const testimonial = [
@@ -68,8 +63,6 @@ function showProfile () {
     text.textContent = item.text; 
 }
 
-console.log(bgImage.style);
-
 // selecting the buttons and adding event listeners to both 
 
 const leftBtn = document.querySelector('.left-arrow');
@@ -96,3 +89,28 @@ rightBtn.addEventListener('click', function () {
     showProfile();
 })
 
+// preventing the page from refreshing, following the click of the submit button
+
+// adding an eventlistener to form to listen for a submit event
+
+const signInForm = document.getElementById('signin-form');
+const signInInputs = document.querySelectorAll('.signin-input');
+
+signInForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    signInInputs.forEach(function(input) {
+        console.log(input.value);
+        input.value = "";
+    })
+})
+
+const signUpForm = document.getElementById('signup-form');
+const signUpInputs = document.querySelectorAll('.signup-input');
+
+signUpForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    signUpInputs.forEach(function(input) {
+        console.log(input.value);
+        input.value = "";
+    })
+})
