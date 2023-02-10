@@ -49,7 +49,7 @@ const company = document.getElementById('company');
 //  initial item 
 let currentItem = 0;
 
-//load initial item as the page loads 
+// //load initial item as the page loads 
 window.addEventListener('DOMContentLoaded', function(){
     showProfile(currentItem);
 })
@@ -75,7 +75,7 @@ leftBtn.addEventListener('click', function () {
         currentItem = testimonial.length-1;
     }
     
-    showProfile();
+    showProfile(currentItem);
     
 })
 
@@ -86,7 +86,7 @@ rightBtn.addEventListener('click', function () {
         currentItem = 0;
     }
 
-    showProfile();
+    showProfile(currentItem);
 })
 
 // preventing the page from refreshing, following the click of the submit button
